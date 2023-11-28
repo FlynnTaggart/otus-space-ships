@@ -1,0 +1,4 @@
+case: underscore
+inpackage-suffix: False
+keeptree: False
+with-expecter: True
