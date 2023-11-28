@@ -17,6 +17,7 @@ var (
 	errFailCastVelocity = errors.New("MovableAdapter: failed to cast object velocity to vector")
 )
 
+// Adapter over UObject for moving
 type Adapter struct {
 	obj domain.UObject
 }

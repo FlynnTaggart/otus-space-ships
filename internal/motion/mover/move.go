@@ -14,6 +14,7 @@ func New(movable domain.Movable) *Mover {
 	return &Mover{movable: movable}
 }
 
+// Move moves a game object
 func (m *Mover) Move() error {
 	pos, err := m.movable.GetPosition()
 	if err != nil {

@@ -15,6 +15,7 @@ func New(movable domain.Rotatable) *Rotator {
 	return &Rotator{movable: movable}
 }
 
+// Rotate rotates a game object
 func (m *Rotator) Rotate() error {
 	ang, err := m.movable.GetAngle()
 	if err != nil {
